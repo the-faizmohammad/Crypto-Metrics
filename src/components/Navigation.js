@@ -13,7 +13,7 @@ const Navigation = () => (
           Most Viewed
         </li>
         <li className="custom-header-list">
-          <h1>Crypto Metrics</h1>
+          <h1>Crypto Treasure Metrics</h1>
         </li>
         <li className="custom-header-list custom-icons-class">
           <FaMicrophone className="custom-icon" />
