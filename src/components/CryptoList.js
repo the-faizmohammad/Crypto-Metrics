@@ -11,7 +11,7 @@ const CryptoList = () => {
     dispatch(fetchCoins());
   }, [dispatch]);
 
-  const filteredCryptos = cryptos.filter((crypto) => crypto.rank <= 100);
+  const filteredCryptos = cryptos.filter((crypto) => crypto.rank <= 10);
 
   return (
     <ul className="homeList">

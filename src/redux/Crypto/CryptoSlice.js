@@ -6,7 +6,7 @@ export const fetchCoins = createAsyncThunk(
   'crypto/fetchCoins',
   async () => {
     try {
-      const response = await fetch(CRYPTO_API);
+      const response = await fetch(CRYPTO_API, { redirect: 'follow' });
       if (!response.ok) {
         throw new Error(`HTTP error! Status: ${response.status}`);
       }
@@ -52,13 +52,7 @@ const cryptoSlice = createSlice({
   initialState,
   reducers: {
     setShowCoin: (state, action) => {
-      const selectedCoin = state.coins.find((coin) => coin.id === action.payload);
-      if (selectedCoin) {
-        state.coins.forEach((coin) => {
-          coin.show = coin.id === action.payload;
-        });
-        state.selectedCoin = selectedCoin;
-      }
+      state.selectedCoin = state.coins.find((coin) => coin.id === action.payload) || null;
     },
   },
   extraReducers: (builder) => {
