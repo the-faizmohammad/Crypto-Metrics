@@ -1,7 +1,13 @@
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Navigation from './components/Navigation';
+
 function App() {
   return (
     <div className="App">
-      <h1>Crypto Metrics App by faiz</h1>
+      <Router>
+        <Navigation />
+      </Router>
     </div>
   );
 }
