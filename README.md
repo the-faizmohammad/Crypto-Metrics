@@ -1,6 +1,5 @@
 # Cryto Currency  Metrics
-See stock data like price and Volume
-
+See Cryto Power in your Dashboard
 <a name="readme-top"></a>
 
 <div align="center">
