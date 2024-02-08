@@ -1,6 +1,6 @@
 # Cryto Currency  Metrics
 See stock data like price and Volume
-
+specially crater to meet the needs of crypto trader
 <a name="readme-top"></a>
 
 <div align="center">
